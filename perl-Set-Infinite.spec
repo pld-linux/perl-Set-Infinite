@@ -6,7 +6,7 @@
 %define	pdir	Set
 %define	pnam	Infinite
 Summary:	Set::Infinite - Sets of intervals
-#Summary(pl):	
+Summary(pl):	Set::Infinite - zbiory przedzia³ów
 Name:		perl-Set-Infinite
 Version:	0.61
 Release:	1
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c9912f4ee6ac2e2291be94a5a2bd11f2
+URL:		http://search.cpan.org/dist/Set-Infinite/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -34,8 +35,18 @@ We allow sets to be infinite.
 There is no account for the order of elements. For example, {1,2}
 = {2,1}.
 
-# %description -l pl
-# TODO
+%description -l pl
+Set::Infinite to modu³ teorii zbiorów dla zbiorów nieskoñczonych.
+
+Zbiór to kolekcja obiektów. Obiekty nale¿±ce do zbioru s± nazywane
+jego elementami.
+
+Jako obiekty dopuszczone jest (prawie) wszystko: liczby rzeczywiste,
+ca³kowite i obiekty (takie jak daty).
+
+Ten modu³ dopuszcza zbiory nieskoñczone.
+
+Nie ma porz±dku elementów. Na przyk³ad {1,2} = {2,1}.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
