@@ -9,7 +9,7 @@ Summary:	Set::Infinite - Sets of intervals
 Summary(pl):	Set::Infinite - zbiory przedzia³ów
 Name:		perl-Set-Infinite
 Version:	0.61
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -18,22 +18,24 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 URL:		http://search.cpan.org/dist/Set-Infinite/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+# 0.61 is lower than 0.5502 in rpmvercmp (for perl-DateTime-Set autodeps)
+Provides:	perl(Set::Infinite) >= 0.5502
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Set::Infinite is a Set Theory module for infinite sets.
 
-A set is a collection of objects.  The objects that belong to a set
-are called its members, or "elements". 
+A set is a collection of objects. The objects that belong to a set are
+called its members, or "elements".
 
-As objects we allow (almost) anything:  reals, integers, and objects
+As objects we allow (almost) anything: reals, integers, and objects
 (such as dates).
 
 We allow sets to be infinite.
 
-There is no account for the order of elements. For example, {1,2}
-= {2,1}.
+There is no account for the order of elements. For example, {1,2} =
+{2,1}.
 
 %description -l pl
 Set::Infinite to modu³ teorii zbiorów dla zbiorów nieskoñczonych.
