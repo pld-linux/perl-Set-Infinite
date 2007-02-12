@@ -6,7 +6,7 @@
 %define	pdir	Set
 %define	pnam	Infinite
 Summary:	Set::Infinite - Sets of intervals
-Summary(pl.UTF-8):   Set::Infinite - zbiory przedziałów
+Summary(pl.UTF-8):	Set::Infinite - zbiory przedziałów
 Name:		perl-Set-Infinite
 Version:	0.61
 Release:	3
