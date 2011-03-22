@@ -8,13 +8,13 @@
 Summary:	Set::Infinite - Sets of intervals
 Summary(pl.UTF-8):	Set::Infinite - zbiory przedziałów
 Name:		perl-Set-Infinite
-Version:	0.63
+Version:	0.65
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	8c573e00f3152db222de08b104b74c31
+# Source0-md5:	d7577c5ed8fceb2ebd1247a4c4a3e825
 URL:		http://search.cpan.org/dist/Set-Infinite/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
